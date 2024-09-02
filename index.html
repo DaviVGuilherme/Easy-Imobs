@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Imobs - Imóveis em Londrina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-center">
+    <header class="bg-primary py-3">
+        <div class="container">
+            <img src="easyimobs.png" alt="Easy Imobs Logo" class="logo mx-auto d-block">
+        </div>
+    </header>
+
+    <main class="my-5">
+        <section class="hero-section bg-secondary text-white py-5">
+            <div class="container">
+                <h1 class="mb-4">Nunca foi tão fácil vender ou comprar imóveis!</h1>
+                <p class="mb-4">Especialistas em compra e venda de imóveis em Londrina e região.</p>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerModal">Cadastre-se Agora</button>
+            </div>
+        </section>
+
+        <section id="services" class="services-section py-5">
+            <div class="container">
+                <h2 class="mb-5">Nossos Serviços</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="service p-4 bg-light rounded shadow-sm">
+                            <h3>Compra de Imóveis</h3>
+                            <p>Ajudamos você a encontrar o imóvel perfeito, com total segurança e agilidade.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service p-4 bg-light rounded shadow-sm">
+                            <h3>Venda de Imóveis</h3>
+                            <p>Garanta a melhor oferta para seu imóvel com nossa ampla rede de contatos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service p-4 bg-light rounded shadow-sm">
+                            <h3>Avaliação de Imóveis</h3>
+                            <p>Receba uma avaliação justa e precisa do valor de mercado do seu imóvel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section bg-primary text-white py-5">
+            <div class="container">
+                <h2 class="mb-5">O que nossos clientes dizem</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial p-4 bg-dark rounded shadow-sm text-start">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="ney.jfif" alt="Mariana Souza" class="rounded-circle me-3" width="50" height="50">
+                                <h4 class="mb-0">Neymar Júnior</h4>
+                            </div>
+                            <p>"A Easy Imobs me ajudou a vender meu apartamento rapidamente e com um ótimo preço!"</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial p-4 bg-dark rounded shadow-sm text-start">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="messi.jfif" alt="Carlos Ferreira" class="rounded-circle me-3" width="50" height="50">
+                                <h4 class="mb-0">Lionel Messi</h4>
+                            </div>
+                            <p>"Encontrei a casa dos meus sonhos com a ajuda dessa equipe incrível. Recomendo!"</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="testimonial p-4 bg-dark rounded shadow-sm text-start">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="cr7.jfif" alt="Ana Pereira" class="rounded-circle me-3" width="50" height="50">
+                                <h4 class="mb-0">Cristiano Ronaldo</h4>
+                            </div>
+                            <p>"A atenção ao cliente e a qualidade dos serviços da Easy Imobs superaram minhas expectativas!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p>&copy; 2024 Easy Imobs. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Cadastre-se para ter um de nossos serviços</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registrationForm">
+                        <div class="mb-3">
+                            <input type="text" id="name" class="form-control" placeholder="Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="date" id="dob" class="form-control" placeholder="Data de Nascimento" required>
+                        </div>
+                        <div class="mb-3">
+                            <select id="gender" class="form-select" required>
+                                <option value="" disabled selected>Gênero</option>
+                                <option value="male">Masculino</option>
+                                <option value="female">Feminino</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="email" class="form-control" placeholder="E-mail" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" id="phone" class="form-control" placeholder="Telefone" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
